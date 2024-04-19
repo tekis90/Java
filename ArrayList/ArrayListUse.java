@@ -28,7 +28,7 @@ class ArrayListUse {
       //accessing value with index
        String firstElement = list.get(0);
        
-       System.out.println("Ilk Eleman:"+firstElement);
+       System.out.println("First Element:"+firstElement);
        
        //number of elements
        int size = list.size();
@@ -48,8 +48,13 @@ class ArrayListUse {
        //find the index value of the element
        System.out.println("Index Value:"+list.indexOf("C++"));
        
-     
-
+       //Adding the given element to the specified index
+       list.add(0, "JavaScript");
+       print(list);
+       
+       //Replace the element at the specified index with the specified element
+       list.set(1, "C");
+       print(list);
        
     }
     
